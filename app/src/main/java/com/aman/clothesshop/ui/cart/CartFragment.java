@@ -16,8 +16,6 @@ import androidx.fragment.app.Fragment;
 
 import com.aman.clothesshop.R;
 import com.aman.clothesshop.model.response.Product;
-import com.aman.clothesshop.services.ApiManager;
-
 import java.util.List;
 
 public class CartFragment extends Fragment {
@@ -56,24 +54,35 @@ public class CartFragment extends Fragment {
     private void addItems(final List<Product> items) {
 
         String removeText = "Remove";
+        final int MARGIN_END = 40;
 
         for(int i=0; i<items.size(); i++) {
 
             final Product item = items.get(i);
-            final int index = i;
 
-            final TableRow row = new TableRow(getContext());
-            TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
+            TableRow row = new TableRow(getContext());
+            TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT);
             row.setLayoutParams(layoutParams);
 
+
+            layoutParams.setMarginEnd(MARGIN_END);
+
             TextView name = new TextView(getContext());
+            name.setLayoutParams(layoutParams);
+
             TextView price = new TextView(getContext());
-            Button delete = new Button(getContext());
+            price.setLayoutParams(layoutParams);
+
+            TextView delete = new TextView(getContext());
 
             delete.setText(removeText);
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    TableRow row = (TableRow) v.getParent();
+
+                    int index = tableLayout.indexOfChild(row);
                     items.remove(index);
                     presenter.deleteItem(row);
                     displayTotal(items);
