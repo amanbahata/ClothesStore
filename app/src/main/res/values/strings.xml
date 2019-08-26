@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Clothes Shop</string>
+    <string name="title_home">Home</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_cart">Cart</string>
+    <string name="refine_list_men">Men</string>
+    <string name="refine_list_women">Women</string>
+    <string name="refine_list_men_footwear">men\'s footwear</string>
+    <string name="refine_list_men_casualwear">men\'s casualwear</string>
+    <string name="refine_list_men_formalwear">men\'s formalwear</string>
+    <string name="refine_list_women_footwear">women\'s footwear</string>
+    <string name="refine_list_women_casualwear">women\'s casualwear</string>
+    <string name="refine_list_women_formalwear">women\'s formalwear</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="currency">GBP</string>
+    <string name="category">Category:</string>
+    <string name="color">Color:</string>
+    <string name="quantity_left">Quantity left:</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="add_to_basket">Add to basket</string>
+    <string name="three_dots">⋮</string>
+    <string name="add_to_cart">Move to cart</string>
+    <string name="remove_item">Remove item</string>
+    <string name="total">Total: GBP</string>
+    <string name="total_placeholder">0.00</string>
+    <string name="your_shopping_cart">Your Shopping Cart</string>
+    <string name="submit_order">Submit order</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter_button"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:title=""
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/category_men"
+                android:orderInCategory="1"
+                android:title="@string/refine_list_men"
+                app:showAsAction="never">
+
+                <menu>
+                    <item
+                        android:id="@+id/men_footwear"
+                        android:orderInCategory="1"
+                        android:title="@string/refine_list_men_footwear"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/men_casual_wear"
+                        android:orderInCategory="2"
+                        android:title="@string/refine_list_men_casualwear"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/men_formal_wear"
+                        android:orderInCategory="3"
+                        android:title="@string/refine_list_men_formalwear"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+
+            <item
+                android:id="@+id/category_women"
+                android:orderInCategory="2"
+                android:title="@string/refine_list_women"
+                app:showAsAction="never">
+
+                <menu>
+                    <item
+                        android:id="@+id/women_footwear"
+                        android:orderInCategory="1"
+                        android:title="@string/refine_list_women_footwear"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/women_casual_wear"
+                        android:orderInCategory="2"
+                        android:title="@string/refine_list_women_casualwear"
+                        app:showAsAction="never" />
+
+                    <item
+                        android:id="@+id/women_formal_wear"
+                        android:orderInCategory="3"
+                        android:title="@string/refine_list_women_formalwear"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

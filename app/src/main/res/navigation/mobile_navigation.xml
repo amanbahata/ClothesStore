@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.aman.clothesshop.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/wishlist"
+        android:name="com.aman.clothesshop.ui.wishlist.WishlistFragment"
+        android:label="@string/title_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.aman.clothesshop.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.aman.clothesshop.ui.detail.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" />
+</navigation>
